@@ -144,7 +144,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // const modalTimerId = setTimeout(openModal, 5000);
+  const modalTimerId = setTimeout(openModal, 5000);
 
 
   function showModalByScroll() {
@@ -156,9 +156,7 @@ window.addEventListener('DOMContentLoaded', function () {
   }
   window.addEventListener('scroll', showModalByScroll);
 
-
-  //Классы для капточек
-
+  //Классы для карточек
 
   let subtitle = document.querySelectorAll('.menu__item-subtitle'),
     text = document.querySelectorAll('.menu__item-descr'),
@@ -193,7 +191,7 @@ window.addEventListener('DOMContentLoaded', function () {
           </div>
         </div>
         `;
-        this.parent.append(element);
+      this.parent.append(element);
     }
   }
 
@@ -207,7 +205,6 @@ window.addEventListener('DOMContentLoaded', function () {
   )
     .render();
 
-    
   new MenuCard(
     "img/tabs/elite.jpg",
     "elite",
@@ -228,7 +225,7 @@ window.addEventListener('DOMContentLoaded', function () {
   )
     .render();
 
-
 });
+
 
 
