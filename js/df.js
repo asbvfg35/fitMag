@@ -144,7 +144,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  const modalTimerId = setTimeout(openModal, 5000);
+  // const modalTimerId = setTimeout(openModal, 5000);
 
 
   function showModalByScroll() {``
@@ -155,5 +155,24 @@ window.addEventListener('DOMContentLoaded', function () {
   }
   window.addEventListener('scroll', showModalByScroll);
 });
+
+
+//Классы
+
+const menu = [['vegy'], ['elite'], ['post']];
+
+let subtitle = document.querySelectorAll('.menu__item-subtitle'),
+text = document.querySelectorAll('.menu__item-descr'),
+price = document.querySelectorAll('.menu__item-total');
+
+class Menu {
+  constructor(img, subtitle, text, price) {
+    this.img = img;
+    this.subtitle = subtitle;
+    this.price = price;
+  }
+
+}
+
 
 
