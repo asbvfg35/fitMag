@@ -41,12 +41,12 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // Timer
 
-  const deadline = '2020-11-11';
+  const deadline = '2022-11-11';
 
   function getTimeRemaining(endtime) {
     let days, hours, minutes, seconds;
     const t = Date.parse(endtime) - Date.parse(new Date());
-
+    console.log(t);
     if (t <= 0) {
       days = 0,
         hours = 0,
