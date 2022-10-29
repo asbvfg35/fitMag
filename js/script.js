@@ -46,7 +46,6 @@ window.addEventListener('DOMContentLoaded', function () {
   function getTimeRemaining(endtime) {
     let days, hours, minutes, seconds;
     const t = Date.parse(endtime) - Date.parse(new Date());
-    console.log(t);
     if (t <= 0) {
       days = 0,
         hours = 0,
@@ -209,7 +208,6 @@ window.addEventListener('DOMContentLoaded', function () {
     'Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!',
     229,
     '.menu .container',
-
   )
     .render();
 
@@ -232,7 +230,6 @@ window.addEventListener('DOMContentLoaded', function () {
     430,
     '.menu .container',
     'menu__item',
-
   )
     .render();
 
@@ -289,8 +286,9 @@ window.addEventListener('DOMContentLoaded', function () {
       })
     })
   }
-
 });
+
+
 
 
 
